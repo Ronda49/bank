@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sudharshan Bank ATM</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🏦 Sudharshan Bank ATM</h1>
+
+  <!-- Login Section -->
+  <section id="loginSection">
+    <h2>Login</h2>
+    <input id="loginAcct" placeholder="Enter Account Number" maxlength="10" />
+    <button id="loginBtn">Login</button>
+    <p>New user? <button id="showRegisterBtn">Register here</button></p>
+  </section>
+
+  <!-- Register Section -->
+  <section id="registerSection" class="hidden">
+    <h2>Create New Account</h2>
+    <input id="regAcct" placeholder="10-digit Account Number" maxlength="10" />
+    <input id="regName" placeholder="Full Name" />
+    <input id="regAge" placeholder="Age" type="number" />
+    <select id="regGender">
+      <option value="">Select Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+    <input id="regBalance" placeholder="Initial Deposit" type="number" />
+    <button id="registerBtn">Register</button>
+    <button id="backToLoginBtn">Back to Login</button>
+  </section>
+
+  <!-- Home Section -->
+  <section id="homeSection" class="hidden">
+    <h2>Welcome, <span id="homeName"></span></h2>
+    <h3>💰 Balance: ₹<span id="balanceDisplay">0.00</span></h3>
+
+    <div class="txnBox">
+      <input id="txnAmount" placeholder="Amount" type="number" />
+      <select id="txnKind">
+        <option value="credit">Deposit</option>
+        <option value="debit">Withdraw</option>
+      </select>
+      <button id="txnBtn">Submit</button>
+      <button id="refreshBtn">🔄 Refresh Balance</button>
+    </div>
+
+    <div class="transferBox">
+      <h3>Transfer Money</h3>
+      <input id="toAccount" placeholder="To Account Number" maxlength="10" />
+      <input id="transferAmount" placeholder="Amount" type="number" />
+      <select id="transferMode">
+        <option value="neft">NEFT</option>
+        <option value="rtgs">RTGS</option>
+      </select>
+      <button id="transferBtn">Transfer</button>
+    </div>
+
+    <div class="transactions">
+      <h3>📜 Recent Transactions</h3>
+      <ul id="txList"></ul>
+    </div>
+
+    <button id="exitBtn" class="exitBtn">Logout</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

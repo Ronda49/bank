@@ -1,0 +1,10 @@
+{
+    "1001001001": {
+        "name": "Sudharshan",
+        "pin": 2243,
+        "gender": "Male",
+        "age": 25,
+        "balance": 0,
+        "transactions": []
+    }
+}
