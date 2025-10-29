@@ -1,0 +1,41 @@
+# ===============================
+# Sudharshan Bank ATM Application
+# Backend: FastAPI
+# Developer tools: Linting, Formatting, Security
+# ===============================
+
+# --- Core Web Framework ---
+fastapi
+uvicorn
+
+# --- Data Validation ---
+pydantic
+
+# --- JSON and HTTP Handling ---
+requests
+
+# --- Development Tools ---
+black          # Code formatter
+isort          # Import sorter
+flake8         # Linter
+flake8-import-order # Import order checker
+flake8-docstrings
+mccabe
+
+# --- Security & Vulnerability Scanning ---
+          # (CLI tool, optional via system install)
+bandit            # Python security analyzer
+
+# --- Testing Tools ---
+pytest
+pytest-cov
+
+# --- Utilities ---
+python-dotenv     # For environment variables
+httpx           # Async HTTP client for testing
+
+# --- Optional (if using Docker) ---
+docker           # Interact with Docker API
+
+# --- Typing Support ---
+types-requests
